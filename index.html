@@ -4,22 +4,84 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
     <title>My website</title>
 </head>
 <body>
     
- 
-    
 
-    <div class="card">
+
+    <header>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#Pro">Projects</a>
+            <a href="#skills">Skilss</a>
+        </nav>
+    </header>
+    
+    <section id="home">
+        <video  autoplay muted loop src="video/star.mp4" id="bg-video"></video>
+        <div class="card">
 
         <h1>Hi,I'm Mohannad Alharbi <br>
             FrontEnd Web Devloper</h1>
         <p>My Major is Programmer and web Devlopment Technology <br>
              and I'm interested in front-end development.</p>
 
-        <button type="button" class="b1">Hire me</button>
-        <button type="button" class="b2">See my Work</button>
+        <div class="links"><a href="assets/Mohannad_ATS_CV_.pdf" class="CV">View CV</a>
+        <a href="https://github.com/Dev-Mohannad" class="icon-github"><i class="fa-brands fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/mohannad-alharbi-659a3b305/" class="icon-linkdin"> <i class="fa-brands fa-linkedin"></i></a>
+        </div>
     </div>
+    </section>
+
+    <section id="Pro">
+        <div class="border">
+        <h1 class="text">My Projects</h1>
+        </div>
+        <div class="card1">
+            <h1>My Graduation Project</h1>
+            <img src="image/code.png" class="img">
+            <p>A freelance platform designed to connect Saudi developers with clients and technical projects</p>
+            <button type="submit"><a href="https://codelinksa.xo.je/?i=1">View Project</a></button>
+        </div>
+    </section>
+
+    <section id="skills">
+
+        <h1 class="My-skilss">S k i l s s</h1>
+        <div class="continer">
+            <div class="skill">
+                <div class="info">
+                    <span>HTML</span>
+                    <span>100%</span>
+                </div>
+                <div class="bar">
+                    <div class="progress" style="--width:100%"></div>
+                </div>
+            </div>
+
+
+            <div class="skill">
+                <div class="info">
+                    <span>CSS</span>
+                    <span>90%</span>
+                </div>
+                <div class="bar">
+                    <div class="progress" style="--width:90%"></div>
+                </div>
+            </div>
+
+            <div class="skill">
+                <div class="info">
+                    <span>JavaScript</span>
+                    <span>70%</span>
+                </div>
+                <div class="bar">
+                    <div class="progress" style="--width:70%"></div>
+                </div>
+            </div>
+        </div>
+    </section>
 </body>
 </html>

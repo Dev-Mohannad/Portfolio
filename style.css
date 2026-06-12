@@ -1,8 +1,57 @@
+
+html{
+    scroll-behavior: smooth;
+}
+#home{
+    height: 100vh;
+    position: relative;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 body{
-    background: url(g.jpg);
-    background-size: 100%;
+    
+}
+#bg-video{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+header{
+    background: rgba(15,23,42,0.85);
+    display: flex;
+    justify-content: center;
+     align-items: center;
+    margin: 0;
+    padding: 20px;
+    border-radius: 5px 10px 10px 10px;
+    width: 100%;
+    
 }
 
+header nav{
+    font-size: 30px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+     margin: 20px;
+}
+
+header nav a{
+    color: white;
+    margin: 20px;
+    transition: 0.3s;
+}
+
+header nav a:hover{
+    color: #38BDF8;
+    margin: 50px;
+    
+}
 
 .card{
     position: absolute;
@@ -15,12 +64,33 @@ body{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 50px;
     color: white;
+    border-right: 5px solid;
+    overflow: hidden;
+    animation: ty 5s steps(38) infinite,
+     step-end ;
+
 }
+
+@keyframes ty {
+    0%{
+        width: 0%;
+    }
+    50%{
+        width: 100%;
+    }
+    100%{
+        width: 100%;
+    }
+}
+
+
 .card p{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 30px;
     color: darkgray;
 }
+
+
 
  .card .b1{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -32,14 +102,384 @@ body{
     padding-right: 40px;
 }
 
-.card .b2 {
+.links{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.links .CV{
+   border: 5px solid rgba(15,23,42,0.85);
+   border-radius: 5px;
+   background-color: rgba(15,23,42,0.85);
+   color: white;
+   text-decoration: none;
+   height: 40px;
+   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   font-size: 25px;
+   margin: 15px;
+   padding: 0px 20px 10px;
+   transition: 0.5s;
+    
+}
+
+.links .CV:hover{
+
+    transform: scale(1.05);
+}
+
+.links .icon-github{
+
+    font-size: 40px;
+    margin: 10px;
+    color: white;
+    transition: 0.5s;
+}
+
+.links .icon-github:hover{
+    color: blue;
+    transform: scale(1.05);
+}
+
+
+.links .icon-linkdin{
+    font-size: 40px;
+    margin: 10px;
+    color:blue;
+    transition: 0.5s;
+}
+
+.links .icon-linkdin:hover{
+    transform: scale(1.05);
+}
+
+#Pro{
+    height: 100vh;
+    position: relative;
+    margin: 0;
+    padding: 0;
+}
+
+.card1{
+    background-color:  #1A1F3C;
+    width: 400px;
+    height: 500px;
+    border: 5px white;
+    border-radius: 10px;
+    position: absolute;
+    top: 40%;
+    left: 100px;
+    transition: 0.5s;
+}
+.card1:hover{
+    transform: scale(1.05);
+    
+}
+
+
+.card1 h1{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: white;
+    margin: 30px;
+}
+.img{
+    width: 400px;
+    height: 200px;
+    position: absolute;
+    
+    left: 0px;
+    border-radius: 50px;
+}
+.card1 p{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 20px;
     color: white;
-    background: transparent;
-    border-radius: 10px;
-    border-color: darkgray;
-    padding: 10px;
-    padding-left: 40px;
-    padding-right: 40px;
+    margin: 30px;
+    position: absolute;
+    top: 300px;
+    left: 10px;
 }
+
+
+.card1 button{
+    background-color: #1A1F3C;
+    position: absolute;
+    top: 400px;
+    left: 110px;
+    padding: 10px;
+    margin: 10px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: larger;
+    border: 1px solid #373f69;
+    border-radius: 10px  ;
+    overflow: hidden;
+    transition: all 0.5s;
+}
+
+.card1 button a{
+    text-decoration: none;
+}
+
+.card1 button:hover{
+
+    background-color: rgba(0, 60, 255, 0.205);
+    color: white;
+}
+
+
+
+.card1 button a{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: larger;
+    color: rgb(255, 255, 255);
+}
+
+
+.text{
+     color: white;
+    font-size: 48px;
+    text-align: center;
+    margin-bottom: 50px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
+.text::after{
+    content: "";
+    display: block;
+    width: 100px;
+    height: 4px;
+    background:rgba(15,23,42,0.85);
+    margin: 10px auto;
+    border-radius: 10px;
+}
+
+
+
+    
+#skills{
+    height: 100vh;
+    position: relative;
+    margin: 0;
+    padding: 0;
+}
+
+.My-skilss{
+    color: white;
+    font-size: 50px;
+    text-align: center;
+    margin-bottom: 50px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.My-skilss::after{
+    content: "";
+    display: block;
+    width: 100px;
+    height: 4px;
+    background:rgba(15,23,42,0.85);
+    margin: 10px auto;
+    border-radius: 10px;
+}
+
+.continer{
+    width: 100%;
+    max-width: 80%;
+    background-color: rgba(15,23,42,0.85);
+    border-radius: 20px;
+    position: absolute;
+    top: 350px;
+    left: 200px;
+    
+    transition: 0.5s all;
+}
+
+.continer:hover{
+    transform: scale(1.05);
+}
+
+.skill{
+    margin-bottom: 20px;
+    width: 100%;
+    padding: 30px;
+}
+
+.info{
+    color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 8px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
+}
+
+.bar{
+    height: 20px;
+    background-color: rgba(15,23,42,0.85);
+    border-radius: 999px;
+    overflow: hidden;
+}
+
+.progress{
+    height: 100%;
+    width: 0;
+    background-color: rgb(255, 255, 255);
+    border-radius: inherit;
+    animation: line 2s forwards;
+}
+
+@keyframes line {
+    to{
+        width:var(--width);
+    }
+}
+
+
+
+
+
+@media (max-width: 768px){
+
+    
+    header{
+        padding: 15px;
+    }
+
+    header nav{
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        font-size: 18px;
+    }
+
+    header nav a{
+        margin: 0;
+    }
+
+  
+    #home{
+        min-height: 100vh;
+    }
+
+    .card{
+        position: absolute;
+        top: 20%;
+        left: 5%;
+        width: 90%;
+    }
+
+    .card h1{
+        font-size: 32px;
+        border-right: none;
+        animation: none;
+    }
+
+    .card p{
+        font-size: 18px;
+        margin-top: 20px;
+    }
+
+   
+    .links{
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        flex-wrap: wrap;
+        margin-top: 20px;
+    }
+
+    .links .CV{
+        font-size: 18px;
+        height: auto;
+        padding: 10px 15px;
+        margin: 0;
+    }
+
+    .links .icon-github,
+    .links .icon-linkdin{
+        font-size: 35px;
+        margin: 0;
+    }
+
+    
+    #Pro{
+        min-height: 100vh;
+        padding: 50px 0;
+    }
+
+    .text{
+        font-size: 40px;
+    }
+
+    .card1{
+        position: static;
+        width: 90%;
+        height: auto;
+        margin: 50px auto;
+        padding-bottom: 30px;
+    }
+
+    .card1 h1{
+        font-size: 18px;
+        text-align: center;
+    }
+
+    .img{
+        position: static;
+        width: 100%;
+        height: auto;
+        border-radius: 20px;
+    }
+
+    .card1 p{
+        position: static;
+        font-size: 18px;
+        margin: 20px;
+    }
+
+    .card1 button{
+        position: static;
+        display: block;
+        margin: 20px auto;
+    }
+
+  
+    #skills{
+        min-height: 100vh;
+        padding: 50px 0;
+    }
+
+    .My-skilss{
+        font-size: 40px;
+        margin-bottom: 30px;
+    }
+
+    .continer{
+        position: static;
+        width: 90%;
+        max-width: 90%;
+        margin: auto;
+        padding: 20px;
+    }
+
+    .skill{
+        padding: 20px 0;
+    }
+
+    .info{
+        font-size: 18px;
+    }
+
+    .bar{
+        width: 100%;
+        height: 15px;
+    }
+
+    .progress{
+        height: 100%;
+    }
+}
+
+
+
+ 
